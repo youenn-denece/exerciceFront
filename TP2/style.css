@@ -5,7 +5,10 @@
   }
 
 body {
-    background-color: rgb(88, 86, 86);
+    background-image: url("https://images.unsplash.com/photo-1656671504766-11720e7e8bac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2066&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     font-family: Arial;
 }
 
@@ -28,6 +31,8 @@ body {
     color: rgb(43, 43, 43);
     margin-left: 20%;
     margin-top: 20%;
+    font-family: 'Gloria Hallelujah';
+    text-shadow: rgb(255, 255, 255) 1px 0 20px;
 }
 
 .titleBis {
@@ -53,6 +58,7 @@ body {
     height: 60vh;
     background-color: rgb(54, 54, 54);
     border-radius: 6px;
+    opacity: 0.9;
 }
 
 .form {
@@ -74,59 +80,155 @@ body {
     background-color: chocolate;
 }
 
+/* nav */
+.nav {
+height: 50px;
+width: 100%;
+background-color: #4d4d4d;
+position: relative;
+opacity: 0.9;
+background-color: rgb(37, 41, 59);
+}
+
+.nav-header {
+display: inline;
+}
+
+.nav-title {
+display: inline-block;
+font-size: 22px;
+color: #fff;
+padding: 10px 10px 10px 10px;
+font-family: 'Gloria Hallelujah';
+}
+
+.nav-links {
+display: inline;
+float: right;
+font-size: 18px;
+}
+
+.nav-links > a {
+display: inline-block;
+padding: 13px 10px 13px 10px;
+text-decoration: none;
+color: #efefef;
+font-family: 'Gloria Hallelujah';
+}
+
+a:hover {
+color: coral;
+}
+
+#nav-check {
+display: none;
+}
+  
+@media (max-width:600px) {
+.nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+}
+.nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+}
+.nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+}
+.nav > .nav-links > a {
+    display: block;
+    width: 100%;
+}
+.nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+}
+.nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+}
+}
+
 @media (max-width: 800px) {
 
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-      
-    .container {
-        flex-direction: column;
-        background-color: rgb(54, 54, 54);
-        height: 100vh;
-    }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-    .bloc {
-        display: flex;
-        flex-direction: row;
-        background-color: rgb(88, 86, 86);
-        border-radius: 4px;
-        width: 90vw;
-        height: auto;
-    }
-
-    .title {
-        color: coral;
-        margin-left: 20%;
-        margin-top: 20%;
-    }
+body {
+    background-image: url("https://images.unsplash.com/photo-1644230929128-e97fd6d7a6c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
     
-    .titleBis {
-        color:white;
-        font-size: 1.5em;
-    }
+.container {
+    flex-direction: column;
+    height: 100vh;
+}
 
-    .form {
-        width: 65vw;
-        border: none;
-        color: white;
-    }
-    
-    .input {
-        padding-left: 6%;
-        padding-bottom: 5px;;
-        margin-bottom: 5px;
-        margin-left: 10px;
-    }
+.bloc {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(88, 86, 86);
+    border-radius: 4px;
+    width: 90vw;
+    height: auto;
+}
 
-    .button {
-        width: 65vw;
-        background-color: coral;
-        border: none;
-        color: white;
-        font-weight: bold;
-    }
+.title {
+    color: coral;
+    margin-left: 20%;
+    margin-top: 20%;
+}
+
+.titleBis {
+    color:white;
+    font-size: 1.5em;
+}
+
+.form {
+    width: 65vw;
+    border: none;
+    color: white;
+}
+
+.input {
+    padding-left: 6%;
+    padding-bottom: 5px;;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.button {
+    width: 65vw;
+    background-color: coral;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
 
 }
