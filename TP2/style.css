@@ -1,18 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
 body {
     background-color: rgb(88, 86, 86);
+    font-family: Arial;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+    width: 80%;
+    margin: 30px;
+    background-color: coral;
+    border: none;
+    color: white;
+    font-weight: bold;
+    height: 3em;;
 }
 
 .title {
-    font-family: Arial;
-    color: white;  
+    color: rgb(43, 43, 43);
+    margin-left: 20%;
+    margin-top: 20%;
 }
 
-.subtitle {
+.titleBis {
     color: coral;
     font-size: 1.5em;
 }
 
+.subtitle {
+    color: rgb(235, 235, 235);
+    display: block;
+}
+
 .bloc {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: auto;
+    margin-top: 6em;
+    padding-bottom: 3em;
+    padding: 15px;
+    padding-top: 3em;
+    width: 30vw;
+    height: 60vh;
     background-color: rgb(54, 54, 54);
-    border-radius: 3px;
+    border-radius: 6px;
+}
+
+.form {
+    width: 87%;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: none;
+    color: white;
+}
+
+.input {
+    padding-left: 6%;
+    padding-bottom: 5px;;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.button:hover {
+    background-color: chocolate;
 }
