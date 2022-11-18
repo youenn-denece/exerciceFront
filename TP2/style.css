@@ -80,11 +80,12 @@ body {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-      }
+    }
       
     .container {
         flex-direction: column;
         background-color: rgb(54, 54, 54);
+        height: 100vh;
     }
 
     .bloc {
@@ -92,15 +93,14 @@ body {
         flex-direction: row;
         background-color: rgb(88, 86, 86);
         border-radius: 4px;
-        width: 80vw;
+        width: 90vw;
         height: auto;
-        margin-block: 2em;
     }
 
     .title {
         color: coral;
-        margin-left: 30%;
-        margin-top: 17%;
+        margin-left: 20%;
+        margin-top: 20%;
     }
     
     .titleBis {
@@ -109,9 +109,7 @@ body {
     }
 
     .form {
-        width: 61vw;
-        margin-bottom: 5px;
-        padding: 5px;
+        width: 65vw;
         border: none;
         color: white;
     }
@@ -124,8 +122,7 @@ body {
     }
 
     .button {
-        width: 62vw;
-        margin: 35px;
+        width: 65vw;
         background-color: coral;
         border: none;
         color: white;
